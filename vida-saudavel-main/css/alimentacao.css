@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav img {
+    width: 400px;
+    height:200px;
+    margin-top: 0px; /* ou padding-top: 50px; */
+  }
+  .fundo-img{
+     display: flex;
+      margin-left: 150px;
+      height: 500px;    
+      width: 200px;
+      margin-top: 300px;
+  }

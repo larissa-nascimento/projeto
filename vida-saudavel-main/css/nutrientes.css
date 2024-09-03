@@ -1,0 +1,77 @@
+h1 {
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+}
+
+h2 {
+    color: #84cc16;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.nutrientes{
+    text-align: center;
+}
+
+.macronutrientes{
+    text-align: center;
+}
+
+.micronutrientes{
+    text-align: center;
+}
+
+.pão{
+    width:110%;
+}
+
+.exemplos{
+    text-align: center;
+    color: #84cc16;
+}
+
+.imagens{
+    text-align: center;
+    display: inline;
+}
+
+.carne{
+    width:110%;
+    margin: 25px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

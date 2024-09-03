@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+    list-style-type: none;
+    font-family: "Noto Serif", serif;
+  
+}
+
+body{
+	background-color:beige;
+	
+}
+
+ .logo {
+    width: 120px;
+    height: 120px;
+	border-radius: 50%;
+	border: 0.5px solid black;
+    margin: 10px;
+   
+ }	
+.on-the-left{
+	display:flex;
+	padding:50px;
+	
+	flex-direction:row;
+	justify-content:space-around;
+	
+}
+
+.one{
+	width:50%;
+	text-align:justify;
+}
+
+.on-the-right{
+	display:flex;
+	justify-content:space-around;
+}
+
+.btn{
+	padding:20px;
+	width:200px;
+	background-color:#8DC640;
+	border:0.1px solid #8DC640;
+	border-radius:20px;
+	
+	padding:15px;
+	color:white;
+	margin-top:20px;
+}
+
+
+.vrd {
+	color:#5e8d20;
+    margin-right: 130px;
+	padding-left: 30%;
+}
+
+header{
+	background-color: #5e8d20;
+	height: 200px;
+    
+}
+ 
+.text_menu{
+
+	color: rgb(245, 240, 240);
+	text-decoration: none;
+}
+
+
+.button{
+    margin-left: 10px;
+    width: 50px;
+    border-radius: 5%;
+    padding: 10px 8px;
+    border: #1a1b19 solid 1px;
+    cursor: pointer;
+    background-color: #1a1b19;
+}
+
+.titulo{
+color: rgb(255, 255, 255);
+font-family: "Orbitron", sans-serif;
+font-size: 40px;
+
+}

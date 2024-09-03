@@ -1,0 +1,52 @@
+footer {
+	
+    background-color: #1a1b19;
+	padding: 10px;
+    color: aliceblue;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: row;
+    justify-content:space-between;
+    letter-spacing: 1px;
+    align-items: center;
+ }
+
+
+ .footer_ul{
+	color: aliceblue;  
+    
+}
+ 
+
+.footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+.logo-rp{
+     width:100px;
+    height: 100px;
+	border-radius: 50%;
+	border: 0.5px solid black;
+	margin-left: 70px;
+    margin-top: 15px; 
+}
+
+.uni{
+    position:absolute;
+    bottom: 1;
+    right: 0;
+    margin-right: 50px;
+    width: 300px;
+    margin-top: 170px;
+}
+
+.unisuam{
+    width:400px;
+    height:60px;
+    padding-right: 0%;
+    
+}
+
+p{
+    margin-left: 25px;
+}

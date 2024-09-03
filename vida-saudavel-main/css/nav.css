@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+nav > img {
+	width: 230px;
+	height:230px;
+}
+
+nav{
+	display:flex;
+	flex-direction: column;
+	padding-bottom:80px;
+}
+
+nav ul li{
+	float:right;
+	padding:20px
+}
+
+
+h1{
+	text-align:center;
+	padding:20px;
+}
+

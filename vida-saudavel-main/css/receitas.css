@@ -1,0 +1,29 @@
+#img-receita-1{
+    border-radius: 3%;
+    border: 1px solid black;
+    margin-right: 10px;
+    float: right;
+    margin-right: 15px;
+    width: 400px;
+    height: 420px;
+}
+
+#img-receita-2{
+    border-radius: 3%;
+    border: 1px solid black;
+    margin-right: 10px;
+    float: left;
+    margin-right: 15px;
+    width: 350px;
+    height: 580px;
+}
+
+#img-receita-3{
+    border-radius: 3%;
+    border: 1px solid black;
+    margin-right: 10px;
+    float: right;
+    margin-right: 15px;
+    width: 400px;
+    height: 420px;
+}

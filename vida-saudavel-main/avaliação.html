@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input[type="text"], .question textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .question input[type="radio"], .question input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="text_color">
+            <img src="img/logo.JPG" class="logo"> <h1 class="titulo">Vida saudável</h1>
+            <ul>
+
+                <li><a href="mitosEVerdades.html" class="text_menu">Mitos e Verdades</a</li>
+                <li><a href="alimentacao.html" class="text_menu">Alimentação</a></li>
+        <li><a href="nutrientes.html" class="text_menu">Nutrientes</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Avaliação do Site</h2>
+        <form id="feedbackForm">
+            <div class="question">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="question">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="question">
+                <label>Como você classificaria sua experiência geral no site?</label>
+                <input type="radio" id="experience1" name="experience" value="Excelente" required>
+                <label for="experience1">Excelente</label>
+                <input type="radio" id="experience2" name="experience" value="Boa">
+                <label for="experience2">Boa</label>
+                <input type="radio" id="experience3" name="experience" value="Regular">
+                <label for="experience3">Regular</label>
+                <input type="radio" id="experience4" name="experience" value="Ruim">
+                <label for="experience4">Ruim</label>
+            </div>
+            <div class="question">
+                <label for="comments">Comentários:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label>Quais áreas do site você acha que precisam de melhorias? (Selecione todas as que se aplicam)</label>
+                <input type="checkbox" id="design" name="improvements" value="Design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="usability" name="improvements" value="Usabilidade">
+                <label for="usability">Usabilidade</label>
+                <input type="checkbox" id="content" name="improvements" value="Conteúdo">
+                <label for="content">Conteúdo</label>
+                <input type="checkbox" id="performance" name="improvements" value="Performance">
+                <label for="performance">Performance</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="responseMessage" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const experience = document.querySelector('input[name="experience"]:checked').value;
+            const comments = document.getElementById('comments').value;
+            const improvements = Array.from(document.querySelectorAll('input[name="improvements"]:checked'))
+                                      .map(el => el.value);
+
+            const feedback = {
+                name: name,
+                email: email,
+                experience: experience,
+                comments: comments,
+                improvements: improvements
+            };
+
+            console.log('Feedback recebido:', feedback);
+
+            document.getElementById('responseMessage').textContent = 'Obrigado pelo seu feedback!';
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+<footer>
+    <div id="footer_contacts">
+        <img src="img/logo.JPG" class="logo-rp" > <br>
+        <br><p  class="p-">Tenha uma vida saudável</p>
+    </div>
+        <div>
+            <h2 class="vrd" >Criadores</h2><br>
+              <ul class="footer_list">
+
+
+
+             <table align="left">
+                  <tr>
+                    <td>
+                      <ul class="text_menu">
+                        <li>Leonardo N.</li><br>
+                        <li>Larissa A.</li><br>
+                        <li>Lucas A.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+
+                <table align="right">
+                  <tr>
+                    <td>
+                      <ul class="text_menu">
+                        <li>Isabelle C.</li><br>
+                        <li>Miguel A.</li><br>
+                        <li>Kawan G.</li>
+                      </ul>
+
+                    </td>
+                  </tr>
+                </table>
+    </div> 
+    <img class="unisuam" src="img/logo_unisuam_horizontal_color.png" alt="">
+
+</footer>
+</body>
+</html>

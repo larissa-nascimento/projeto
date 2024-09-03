@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav img {
+    width: 690px;
+    height:400px;
+    margin-top: 2px;
+  }
+  .center-image-grid {
+      display: flex;
+      margin-left: 0px;
+      height: 500px;    
+      width: 800px;
+      margin-top: 150px;
+  }
+  
+  

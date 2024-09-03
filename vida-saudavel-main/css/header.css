@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  font-family: "Roboto";
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: rgb(59, 59, 59);
+  backdrop-filter: blur(6px);
+  background: rgb(112, 151, 61);
+  color: white;
+  height: 150px;
+  flex-direction: row;
+}
+
+nav ul li {
+  float: left;
+  padding: 20px;
+  border: none;
+}
+
+.header-logo {
+  width: 8ch;
+}
+
+.title-header {
+  color: white;
+  font-family: sans-serif;
+}
+nav ul li:hover {
+  background-color: #71a82a;
+  border-radius: 4%;
+}
